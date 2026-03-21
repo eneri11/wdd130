@@ -52,7 +52,7 @@ nav, p, section, article {
     height: auto;
 }
 
-h1 {
+h1, h2 {
     position: absolute;
     top: 20px;
     width: 100%;
