@@ -12,10 +12,14 @@
     --heading-font:var(--heading-font) "Times New Roman", "Georgia", serif;
     --body-font:var(--body-font) Arial, Helvetica, sans-serif;
 }
-
+/* Example if the text is black */
 header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+  background-color: #fff; /* Change background to white */
+  /* ... other styles */
+}
+header h1, header p, header a { /* Target text elements */
+  color: rgb(0, 0, 0); /* Keep text black */
+  /* ... other styles */
 }
 
 body {
