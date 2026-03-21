@@ -43,7 +43,8 @@ nav, p, section, article {
 }
 
 .hero {
-    position: relative;
+    /* Other styles for .hero*/
+    position: relative; /* Add this line */
 }
 
 .hero img {
@@ -52,8 +53,14 @@ nav, p, section, article {
     height: auto;
 }
 
+/* Option 1: If h1 is a direct child and you want to target it specifically within .hero*/
+.hero h1 {
+    position: absolute; /*Add this line*/
+    /* Other styles for h1 within .hero */ 
+}
+/* Option 2: If you want to target All h1 elements and they happen to be in .hero */
 h1, h2 {
-    position: absolute;
+    position: absolute; /* Add this line */
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -61,6 +68,18 @@ h1, h2 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff; /* white text - make sure there is enough contrast with the background-color */
+}
+
+/* Option 1: If article is a direct child and you want to target it specifically within .hero */
+.hero article {
+  position: absolute; /* Add this line */
+  /* Other styles for article within .hero */
+}
+
+/* Option 2: If you want to target ALL article elements and they happen to be in .hero */
+article {
+  position: absolute; /* Add this line */
+  /* Other styles for article */
 }
 
 .hero article img {
