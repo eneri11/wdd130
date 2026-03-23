@@ -5,7 +5,7 @@
     --primary-color:var(--primary-color) #f4a261; /* warm sand */ 
     --secondary-color:var(--secondary-color) #055a05; /* forest green */ 
     --accent1-color:var(--accent1-color) #264653; /* dark slate blue */
-    --accent2-color:var(--accent2-color) #e9c46a; /* light golden yellow */
+    --accent2-color:var(--accent2-color) #e8b32e; /* light golden yellow */
     --heading-font:var(--heading-font) "Times New Roman", "Georgia", serif;
     --body-font:var(--body-font) Arial, Helvetica, sans-serif;
 }
