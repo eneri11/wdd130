@@ -1,3 +1,4 @@
+/* Hero section styling - NEWLY ADDED/MODIFIED */
 * {
     margin: 0;
     padding: 0;
@@ -47,15 +48,16 @@ nav, p, section, article {
 }
 
 .hero {
-    /* Other styles for .hero*/
-    position: relative; /* Add this line */
+  position: relative; /* Crucial for absolute positioning of children */
+  text-align: center; /* Centers inline/inline-block children */
 }
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block; /* Removes extra space below the image */
+  width: 100%; /* Image fills the width of its container */
+  height: auto; /* Maintains aspect ratio */
 }
+
 
 /* Option 1: If h1 is a direct child and you want to target it specifically within .hero*/
 .hero h1 {
@@ -63,22 +65,38 @@ nav, p, section, article {
     /* Other styles for h1 within .hero */ 
 }
 /* Option 2: If you want to target All h1 elements and they happen to be in .hero */
-h1, h2 {
-    position: absolute; /* Add this line */
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff; /* white text - make sure there is enough contrast with the background-color */
+h1, h2 { /* Styling for the hero heading */
+  position: absolute; /* Positioned relative to the .hero div */
+  top: 20px; /* Example positioning - adjust as needed */
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7; /* Slight transparency */
+  background-color: var(--hero-heading-bg); /* Using a dark accent color */
+  color: var(--accent2-color); /* White text for contrast */
+  font-size: 2.5em; /* Larger font size for hero heading */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 /* Option 1: If article is a direct child and you want to target it specifically within .hero */
 .hero article {
-  position: absolute; /* Add this line */
-  /* Other styles for article within .hero */
+  position: absolute; /* Positioned relative to the .hero div */
+  bottom: 20px; /* Position near the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center the article horizontally */
+  width: 80%; /* Make it take up a good portion of the width */
+  max-width: 600px; /* Limit maximum width */
+  background-color: var(--accent2-color); /* White background for the article */
+  color: var(--accent1-color);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  display: flex; /* Use flexbox for image and text inside article */
+  align-items: flex-start; /* Align items to the top */
+  gap: 15px; /* Space between image and text */
+  box-sizing: border-box;
 }
+
 
 /* Option 2: If you want to target ALL article elements and they happen to be in .hero */
 article {
@@ -87,6 +105,12 @@ article {
 }
 
 .hero article img {
-    float: right;
-    width: 125px;
+  float: right; /* Float the image to the right within the article */
+  width: 125px; /* Specific width for this image */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 16px; /* Add some margin to the left of the floated image */
+  border-radius: 5px; /* Slightly rounded corners */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Add a subtle shadow */
 }
+
+
