@@ -6,8 +6,8 @@
 }
 
 :root {
-    --primary-color:var(--primary-color) #055a05; /* forest green */
-    --secondary-color:var(--secondary-color) #f4a261; /* warm sand */
+    --primary-color:var(--primary-color) #f4a261; /* warm sand */ 
+    --secondary-color:var(--secondary-color) #055a05; /* forest green */ 
     --accent1-color:var(--accent1-color) #264653; /* dark slate blue */
     --accent2-color:var(--accent2-color) #e9c46a; /* light golden yellow */
     --heading-font:var(--heading-font) "Times New Roman", "Georgia", serif;
