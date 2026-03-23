@@ -57,7 +57,7 @@ nav, p, section, article, h2 {
 }
 
 /* Option 2: If you want to target All h1 elements and they happen to be in .hero */
-h1, h2 { /* Styling for the hero heading */
+h1 { /* Styling for the hero heading */
   position: absolute; /* Positioned relative to the .hero div */
   top: 20px; /* Example positioning - adjust as needed */
   width: 100%;
