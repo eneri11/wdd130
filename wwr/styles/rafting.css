@@ -53,7 +53,7 @@ nav, p, section, article, h2 {
 .hero img {
   display: block; /* Removes extra space below the image */
   width: 100%; /* Image fills the width of its container */
-  height: 400; /* Maintains aspect ratio */
+  height: auto; /* Maintains aspect ratio */
 }
 
 /* Option 2: If you want to target All h1 elements and they happen to be in .hero */
