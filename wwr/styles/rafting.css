@@ -1,123 +1,108 @@
-/* Hero section styling - NEWLY ADDED/MODIFIED */
-/* Example if the text is black */
-
 :root {
-    --primary-color:var(--primary-color) #f4a261; /* warm sand */ 
-    --secondary-color:var(--secondary-color) #055a05; /* forest green */ 
-    --accent1-color:var(--accent1-color) #264653; /* dark slate blue */
-    --accent2-color:var(--accent2-color) #e8b32e; /* light golden yellow */
-    --heading-font:var(--heading-font) "Times New Roman", "Georgia", serif;
-    --body-font:var(--body-font) Arial, Helvetica, sans-serif;
+  /* Color Scheme: Inspired by nature and adventure */
+  --primary-color: #0077cc;
+  /* Deep Blue for water and primary elements */
+  --secondary-color: #f0ad4e;
+  /* Warm Orange - for accents and calls to action */
+  --accent1-color: #333333;
+  /* Dark Gray - for body text */
+  --accent2-color: #ffffff;
+  /* White - for backgrounds and contrast */
+  --hero-bg-color: rgba(0, 0, 0.5);
+  /* Semi-transparent black for hero text overlay */
+  --hero-heading-bg: #264653;
+  /* Dark Slate Blue for hero heading background */
+  --history-image-bg: #4a4a4a;
+  /* Darker gray for history image placeholder */
+  --adventure-gallery-bg: #e0e0e0;
+  /* Light gray for adventure gallery background */
+
+  /* Font Selection */
+  --heading-font: "Arial Black", "Gadget", sans-serif;
+  /* Bold and impactful for headings */
+  --body-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Clean and readable for body text */
 }
 
-header {
-  background-color: #f7a2f7; /* Change background to white */
-  /* ... other styles */
-}
-
+/* Reset box-model properties */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-}
-
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-h1 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.hero {
-  position: relative; /* Crucial for absolute positioning of children */
-  text-align: center; /* Centers inline/inline-block children */
-}
-
-.hero img {
-  display: block; /* Removes extra space below the image */
-  width: 100%; /* Image fills the width of its container */
-  height: auto; /* Maintains aspect ratio */
-}
-
-/* Option 2: If you want to target All h1 elements and they happen to be in .hero */
-h1 { /* Styling for the hero heading */
-  position: absolute; /* Positioned relative to the .hero div */
-  top: 20px; /* Example positioning - adjust as needed */
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7; /* Slight transparency */
-  background-color: var(--hero-heading-bg); /* Using a dark accent color */
-  color: var(--accent2-color); /* White text for contrast */
-  font-size: 2.5em; /* Larger font size for hero heading */
-  box-sizing: border-box; /* Include padding in the element's total width and height */
-}
-
-.hero article img {
-  float: right; /* Float the image to the right within the article */
-  width: 125px; /* Specific width for this image */
-  height: auto; /* Maintain aspect ratio */
-  margin-left: 16px; /* Add some margin to the left of the floated image */
-  border-radius: 5px; /* Slightly rounded corners */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Add a subtle shadow */
-}
-
-header h1, header p, header a { /* Target text elements */
-  color: rgb(0, 0, 0); /* Keep text black */
-  /* ... other styles */
-}
-
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-/* Option 1: If h1 is a direct child and you want to target it specifically within .hero*/
-.hero h1 {
-    position: absolute; /*Add this line*/
-    /* Other styles for h1 within .hero */ 
-}
-
-/* Option 1: If article is a direct child and you want to target it specifically within .hero */
-.hero article {
-  position: absolute; /* Positioned relative to the .hero div */
-  bottom: 20px; /* Position near the bottom */
-  left: 50%;
-  transform: translateX(-50%); /* Center the article horizontally */
-  width: 80%; /* Make it take up a good portion of the width */
-  max-width: 600px; /* Limit maximum width */
-  background-color: var(--accent2-color); /* White background for the article */
-  color: var(--accent1-color);
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
-  display: flex; /* Use flexbox for image and text inside article */
-  align-items: flex-start; /* Align items to the top */
-  gap: 15px; /* Space between image and text */
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* Option 2: If you want to target ALL article elements and they happen to be in .hero */
-article {
-  position: absolute; /* Add this line */
-  /* Other styles for article */
+/* Body styling */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: var(--accent2-color);
+  /* Set a default background color */
 }
 
+/* Limit page width and center content */
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+  background-color: var(--accent2-color);
+  /* Ensure content areas have white background */
+}
 
+/* Heading styling */
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-top: 16px;
+  /* Add some top margin for headings */
+  margin-bottom: 8px;
+  /* Add some bottom margin for headings */
+}
+
+/* Navigation and text element styling */
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Header styling */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 16px;
+  /* Add padding to the header */
+  display: flex;
+  /* Use flexbox for aligning logo and nav */
+  justify-content: space-between;
+  /* Space out logo and nav */
+  align-items: center;
+  /* Vertically align items */
+}
+
+header img {
+  height: 75px;
+  /* Adjust logo size as needed */
+  width: auto;
+}
+
+/* Navigation list styling */
+nav ul {
+  list-style: none;
+  /* Remove default list bullets */
+  display: flex;
+  /* Arrange nav items horizontally */
+}
+
+nav ul li {
+  margin-left: 20px;
+  /* Space between nav items */
+}
+
+nav ul li a {
+  color: var(--accent2-color);
+  /* White text for nav links */
+}
