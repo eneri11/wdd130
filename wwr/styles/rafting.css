@@ -277,5 +277,26 @@ footer {
   background-color: var(--primary-color);
   color: var(--accent2-color);
   text-align: center;
-  padding: 20px
+  padding: 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+  /* Space between copyright and social media */
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  /* Space between social media icons */
+}
+
+/* ---FIX FOR SOCIAL MEDIA LINKS --- */
+/* This rule targets anchor tags (a) tat are descendants of elements with the class 'socialmedia' */
+.socialmedia a {
+  text-decoration: none;
+  /* Removes the underline */
+  display: inline-block;
+  /* Ensures the link respects padding/margins if needed */
 }
