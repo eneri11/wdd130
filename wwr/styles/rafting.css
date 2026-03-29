@@ -8,8 +8,6 @@
   /* Dark Gray - for body text */
   --accent2-color: #ffffff;
   /* White - for backgrounds and contrast */
-  --hero-bg-color: rgba(0, 0, 0.5);
-  /* Semi-transparent black for hero text overlay */
   --hero-heading-bg: #264653;
   /* Dark Slate Blue for hero heading background */
   --history-image-bg: #4a4a4a;
@@ -133,26 +131,10 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--hero-bg-color);
-  /* Use the unused variable here */
-  z-index: 1;
-  /* Ensure it's below the text but above the image */
-}
-
 .hero img {
   display: block;
   width: 100%;
   height: auto;
-  position: relative;
-  /* Ensure image is below the pseudo-element */
-  z-index: 0;
 }
 
 h1 {
@@ -167,8 +149,6 @@ h1 {
   color: var(--accent2-color);
   font-size: 2.5em;
   box-sizing: border-box;
-  z-index: 2;
-  /* Ensure text is above the overlay */
 }
 
 .hero article {
@@ -187,8 +167,6 @@ h1 {
   align-items: flex-start;
   gap: 15px;
   box-sizing: border-box;
-  z-index: 2;
-  /* Ensure article is above the overlay */
 }
 
 .hero article img {
