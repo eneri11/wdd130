@@ -71,7 +71,7 @@ article {
   padding: 8px;
 }
 
-/* Header styling */
+/* Header styling using CSS Grid */
 header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
@@ -110,7 +110,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin-left: 0;
   /* Remove margin as gap handles spacing  */
 }
 
@@ -188,6 +188,8 @@ h1 {
   /* Two equal columns */
   gap: 20px;
   /* Space between columns */
+  align-items: start;
+  /* Align items to the top */
   padding: 20px 16px;
 }
 
@@ -225,6 +227,11 @@ h1 {
   padding: 30px 16px;
 }
 
+.adventure-section h2 {
+  margin-bottom: 30px;
+  /* More space below the heading */
+}
+
 .adventure-gallery {
   display: flex;
   /* Use Flexbox for horizontal layout */
@@ -255,6 +262,14 @@ h1 {
   font-size: 0.9em;
   color: var(--figure-caption-color);
   font-style: italic;
+}
+
+/* Styling for figure and figcaption elements */
+figure {
+  margin: 10px 0;
+  /* Add some margin around figures */
+  text-align: center;
+  /* Center */
 }
 
 /* Footer styling */
