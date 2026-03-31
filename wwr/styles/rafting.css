@@ -43,7 +43,7 @@ body {
 header,
 main,
 footer {
-  width: 840px;
+  width: 1040px;
   margin: 0 auto;
   background-color: var(--accent2-color);
   /* Ensure content areas have white background */
@@ -77,11 +77,11 @@ header {
   /* Add padding to the header */
   display: grid;
   /* Use Grid for header layout */
-  grid-template-columns: auto 3fr;
+  grid-template-columns: auto 4fr;
   /* Logo on left, nav takes remaining space */
-  align-items: left;
+  align-items: right;
   /* Vertically align items */
-  gap: 20px;
+  gap: 10px;
   /* Space between logo and nav */
 }
 
@@ -99,11 +99,11 @@ nav ul {
   /* Remove default list bullets */
   display: flex;
   /* Use Flexbox for horizontal layout */
-  justify-content: flex-end;
+  justify-content: flex-start;
   /* Align nav items to the right */
   gap: 20px;
   /* Space between nav items */
-  grid-column: 2;
+  grid-column: 1;
   /* Place nav in the second column */
 }
 
@@ -140,28 +140,27 @@ nav ul li a:hover {
 h1 {
   /* Styling for the hero heading */
   position: absolute;
-  top: 20px;
+  top: -180px;
   width: 100%;
   padding: 16%;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--hero-heading-bg);
+  opacity: 10;
   color: var(--accent2-color);
   font-size: 2.5em;
   box-sizing: border-box;
 }
 
 .hero article {
-  position: absolute;
-  bottom: 20px;
+  position: relative;
+  bottom: -30px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-85%);
   width: 80%;
-  max-width: 600px;
-  background-color: var(--accent2-color);
+  max-width: 800px;
+  background-color: var(--adventure-gallery-bg);
   color: var(--accent1-color);
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: flex-start;
@@ -170,6 +169,7 @@ h1 {
 }
 
 .hero article img {
+  background-color: var(--hero-heading-bg);
   float: right;
   width: 125px;
   height: auto;
@@ -180,9 +180,13 @@ h1 {
 
 /* History Section Styling */
 .history-section {
+  flex-basis: calc(20% - 50px);
+  /* Aim for 3 items, adjust for gap */
+  text-align: center;
+  background-color: var(--hero-heading-bg);
   display: grid;
   /* Use Grid for the history section layout */
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   /* Two equal columns */
   gap: 20px;
   /* Space between columns */
@@ -192,28 +196,26 @@ h1 {
 }
 
 .history-content {
-  grid-column: 1;
+  grid-column: 3;
   /* Content in the first column */
 }
 
 .history-image-placeholder {
   grid-column: 2;
-  /* Image placeholder in the second column */
-  background-color: var(--history-image-bg);
-  /* Background color for the placeholder */
+  /* Image placeholder in the second;column */
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 200px;
+  align-items: right;
+  height: 100px;
   /* Fixed height for the placeholder */
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .history-image-placeholder img {
-  max-width: 80%;
+  max-width: 100%;
   /* Ensure image fits within the placeholder */
-  max-height: 80%;
-  opacity: 0.6;
+  max-height: 100%;
+  opacity: 10;
   /* Slightly dim the placeholder image */
 }
 
@@ -286,7 +288,7 @@ footer p {
 .socialmedia {
   display: flex;
   justify-content: right;
-  gap: 10px;
+  gap: -500px;
   /* Space between social media icons */
   justify-content: space-around;
   /* Distribute items evenly */
@@ -294,8 +296,6 @@ footer p {
   /* Allow items to wrap to the next line if needed */
 }
 
-/* ---FIX FOR SOCIAL MEDIA LINKS --- */
-/* This rule targets anchor tags (a) tat are descendants of elements with the class 'socialmedia' */
 .socialmedia a {
   text-decoration: none;
   /* Removes the underline */
