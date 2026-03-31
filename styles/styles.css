@@ -1,3 +1,19 @@
+/* Class Selectors */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+    <ul class="box" >
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -14,14 +30,19 @@ main {
 }
 
 aside {
-    width: 20rem;
+    <aside class="box" > width: 20em;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     /* 1 */
-    padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
 
 aside img {
@@ -34,6 +55,8 @@ h1 {
 }
 
 main img {
+    /* you most likely will have other CSS declaration here. */
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid black;
