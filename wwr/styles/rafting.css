@@ -77,11 +77,11 @@ header {
   /* Add padding to the header */
   display: grid;
   /* Use Grid for header layout */
-  grid-template-columns: auto 4fr;
+  grid-template-columns: 100px 2fr;
   /* Logo on left, nav takes remaining space */
-  align-items: right;
+  align-items: first center;
   /* Vertically align items */
-  gap: 10px;
+  gap: 30px;
   /* Space between logo and nav */
 }
 
@@ -171,10 +171,10 @@ h1 {
 .hero article img {
   background-color: var(--hero-heading-bg);
   float: right;
-  width: 125px;
+  width: 100px;
   height: auto;
   margin-left: 16px;
-  border-radius: 5px;
+  border-radius: 100px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -186,7 +186,7 @@ h1 {
   background-color: var(--hero-heading-bg);
   display: grid;
   /* Use Grid for the history section layout */
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   /* Two equal columns */
   gap: 20px;
   /* Space between columns */
@@ -201,7 +201,7 @@ h1 {
 }
 
 .history-image-placeholder {
-  grid-column: 2;
+  grid-column: -2;
   /* Image placeholder in the second;column */
   display: flex;
   justify-content: center;
