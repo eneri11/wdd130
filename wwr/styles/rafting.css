@@ -72,7 +72,7 @@ article {
 /* Header styling using CSS Grid */
 header {
   background-color: var(--primary-color);
-  color: var(--accent2-color);
+  color: var(--hero-heading-bg);
   padding: 16px;
   /* Add padding to the header */
   display: grid;
@@ -292,7 +292,6 @@ footer p {
   /* Distribute items evenly */
   flex-wrap: wrap;
   /* Allow items to wrap to the next line if needed */
-
 }
 
 /* ---FIX FOR SOCIAL MEDIA LINKS --- */
