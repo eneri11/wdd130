@@ -72,14 +72,14 @@ article {
 /* Header styling using CSS Grid */
 header {
   background-color: var(--primary-color);
-  color: var(--hero-heading-bg);
+  color: var(--accent2-color);
   padding: 16px;
   /* Add padding to the header */
   display: grid;
   /* Use Grid for header layout */
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 3fr;
   /* Logo on left, nav takes remaining space */
-  align-items: center;
+  align-items: left;
   /* Vertically align items */
   gap: 20px;
   /* Space between logo and nav */
