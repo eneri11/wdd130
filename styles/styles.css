@@ -30,7 +30,7 @@ main {
 }
 
 aside {
-    <aside class="box" > width: 20em;
+    width: 20em;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     /* 1 */
