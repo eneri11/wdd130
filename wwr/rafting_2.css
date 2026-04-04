@@ -1,0 +1,94 @@
+/* rafting.css */
+
+:root {
+    /* Color Scheme: Inspired by nature and adventure */
+    --primary-color: #0077cc;
+    /* Deep Blue - for water and primary elements */
+    --secondary-color: #f0ad4e;
+    /* Warm Orange - for accents and calls to action */
+    --accent1-color: #333333;
+    /* Dark Gray - for body text */
+    --accent2-color: #ffffff;
+    /* White - for backgrounds and contrast */
+    /* --hero-bg-color: rgba(0, 0, 0, 0.5);  -- REMOVED: As it was unused */
+    --hero-heading-bg: #264653;
+    /* Dark Slate Blue for hero heading background */
+    --history-image-bg: #4a4a4a;
+    /* Darker gray for history image placeholder */
+    --adventure-gallery-bg: #e0e0e0;
+    /* Light gray for adventure gallery background */
+    --figure-caption-color: #666;
+    /* Color for figure captions */
+
+    /* Font Selection */
+    --heading-font: "Arial Black", "Gadget", sans-serif;
+    /* Bold and impactful for headings */
+    --body-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* Clean and readable for body text */
+}
+
+/* Reset box-model properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
+    /* Set a default background color */
+}
+
+/* Limit page width and center content */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+    background-color: var(--accent2-color);
+    /* Ensure content areas have white background */
+}
+
+/* Heading styling */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-top: 16px;
+    /* Add some top margin for headings */
+    margin-bottom: 8px;
+    /* Add some bottom margin for headings */
+}
+
+/* Navigation and text element styling */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Header styling using CSS Grid */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 16px;
+    display: grid;
+    /* Use Grid for header layout */
+    grid-template-columns: auto 1fr;
+    /* Logo on left, nav takes remaining space */
+    align-items: center;
+    /* Vertically align items */
+    gap: 20px;
+    /* Space between logo and nav */
+}
+
+header img {
+    height: 75px;
+    /* Adjust logo size as needed */
+    width: auto;
+    grid-column: 1;
