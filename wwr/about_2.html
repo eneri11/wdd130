@@ -25,7 +25,7 @@
         <!-- Replace 'images/hero_large.jpg' with your actual large hero image -->
         <img src="images/hero_large.jpg" alt="Exciting Expeditions Rafting Adventure">
         <h1>White Water Rafting Company</h1>
-        <article>
+        <article>]
             <h2>Our Mission</h2>
             <!-- Replace 'images/happy_client.jpg' with an image of a happy client or employee -->
             <img src="images/happy_client.jpg" alt="Happy Rafting Client">
@@ -39,6 +39,108 @@
     </div>
 
     <main>
+        <section class="contact-info-section">
+            <h1>Contact Us</h1>
+            <p>
+                We're here to help you plan your next adventure! Reach out to us with any questions,
+                inquiries, or to book your rafting trip.
+            </p>
+
+            <div class="contact-details">
+                <div class="company-address">
+                    <h2>Exciting Expeditions</h2>
+                    <p>123 Main River Street</p>
+                    <p>Kolob, California</p>
+                    <p>+1 999 999 9999</p>
+                    <p>info@whitewater.com</p>
+                </div>
+
+                <div class="contact-map">
+                    <!-- Google Map Placeholder - Replace with actual iframe later -->
+                    <!-- For now, we'll use a placeholder image or a simple div -->
+                    <div class="map-placeholder">
+                        <img src="images/map_placeholder.png" alt="Map Placeholder">
+                        <p>Map will appear here</p>
+                    </div>
+                    <!-- When you get the iframe, it should look like this (remove style="border:0"): -->
+                    <!--
+                            <iframe src="YOUR_MAP_EMBED_URL" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            -->
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post"> <!-- action="#" is a placeholder -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name"
+                      required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com"
+                      required>
+                </div>
+
+                <div class="form-group">
+                    <label>Purpose of Message:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="inquiry" name="purpose" value="General Inquiry"
+                          checked>
+                        <label for="inquiry">General Inquiry</label><br>
+
+                        <input type="radio" id="reservation" name="purpose"
+                          value="Reservation Question">
+                        <label for="reservation">Reservation Question</label><br>
+
+                        <input type="radio" id="suggestion" name="purpose"
+                          value="Website Suggestion">
+                        <label for="suggestion">Website Suggestion</label><br>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Type here..." rows="6"
+                      required></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-button">Get in Touch!</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="employee-profiles-section">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-gallery">
+                <div class="employee-profile">
+                    <!-- Placeholder for employee image -->
+                    <img src="images/employee_placeholder.png" alt="Employee Profile Picture">
+                    <h3>John Smith</h3>
+                    <p>Lead Rafting Guide</p>
+                </div>
+                <div class="employee-profile">
+                    <img src="images/employee_placeholder.png" alt="Employee Profile Picture">
+                    <h3>Jane Doe</h3>
+                    <p>Operations Manager</p>
+                </div>
+                <div class="employee-profile">
+                    <img src="images/employee_placeholder.png" alt="Employee Profile Picture">
+                    <h3>Peter Jones</h3>
+                    <p>Customer Relations</p>
+                </div>
+            </div>
+        </section>
+
         <section class="history-section">
             <div class="history-content">
                 <h2>Our History</h2>
