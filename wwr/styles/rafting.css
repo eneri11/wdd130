@@ -53,6 +53,26 @@ footer {
   /* Ensure content areas have white background */
 }
 
+/* Heading styling */
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-top: 16px;
+  /* Add some top margin for headings */
+  margin-bottom: 8px;
+  /* Add some bottom margin for headings */
+}
+
+/* Navigation and text element styling */
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
 /* Header styling using CSS Grid */
 header {
   background-color: var(--primary-color);
@@ -61,11 +81,11 @@ header {
   /* Add padding to the header */
   display: grid;
   /* Use Grid for header layout */
-  grid-template-columns: 100px 1fr 2fr;
+  grid-template-columns: auto 1fr;
   /* Logo on left, nav takes remaining space */
   align-items: first center;
   /* Vertically align items */
-  grid-gap: 10px;
+  grid-gap: 20px;
   /* Space between logo and nav */
 }
 
@@ -161,26 +181,6 @@ h1 {
   font-size: 2.5em;
   box-sizing: border-box;
   z-index: 2;
-}
-
-/* Heading styling */
-h1,
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-top: 16px;
-  /* Add some top margin for headings */
-  margin-bottom: 8px;
-  /* Add some bottom margin for headings */
-}
-
-/* Navigation and text element styling */
-nav,
-p,
-section,
-article {
-  margin: 16px;
-  padding: 8px;
 }
 
 .hero article {
