@@ -31,6 +31,16 @@
   box-sizing: border-box;
 }
 
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
 /* Body styling */
 body {
   font-family: var(--body-font);
@@ -39,11 +49,25 @@ body {
   /* Set a default background color */
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  background-color: #d2d7ff;
+}
+
+.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 8px;
+}
+
 /* Limit page width and center content */
 header,
 main,
 footer {
-  width: 1040px;
+  width: 840px;
   margin: 0 auto;
   background-color: var(--accent2-color);
   /* Ensure content areas have white background */
@@ -219,6 +243,13 @@ h1 {
   /* Slightly dim the placeholder image */
 }
 
+.adventures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 8px;
+}
+
 /* Adventure Section Styling */
 .adventure-section {
   text-align: center;
@@ -272,6 +303,14 @@ figure {
   /* Center */
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #000;
+  padding: 10px 0;
+}
+
 /* Footer styling */
 footer {
   background-color: var(--primary-color);
@@ -288,7 +327,7 @@ footer p {
 .socialmedia {
   display: flex;
   justify-content: right;
-  gap: -500px;
+  gap: 10px;
   /* Space between social media icons */
   justify-content: space-around;
   /* Distribute items evenly */
