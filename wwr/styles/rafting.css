@@ -60,6 +60,12 @@ header li {
   width: auto;
 }
 
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 h1 {
   position: absolute;
   top: 20px;
@@ -225,11 +231,20 @@ body {
   /* Set a default background color */
 }
 
+/* Header styling using CSS Grid */
 header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 16px;
+  /* Add padding to the header */
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  /* Use Grid for header layout */
+  grid-template-columns: 100px 1fr 2fr;
+  /* Logo on left, nav takes remaining space */
+  align-items: first center;
+  /* Vertically align items */
   grid-gap: 10px;
-  background-color: #d2d7ff;
+  /* Space between logo and nav */
 }
 
 /* Limit page width and center content */
@@ -251,49 +266,12 @@ article {
   padding: 8px;
 }
 
-/* Adventure Section Styling */
-.adventure-section {
-  text-align: center;
-  background-color: var(--adventure-gallery-bg);
-  /* Light gray background */
-  padding: 30px 16px;
-}
-
-.adventure-section h2 {
-  margin-bottom: 30px;
-  /* More space below the heading */
-}
-
-.adventure-gallery {
-  display: flex;
-  /* Use Flexbox for horizontal layout */
-  justify-content: space-around;
-  /* Distribute items evenly */
-  flex-wrap: wrap;
-  /* Allow items to wrap to the next line if needed */
-  gap: 20px;
-  /* Space between adventure items */
-}
-
-.adventure-item {
-  flex-basis: calc(20% - 20px);
-  /* Aim for 5 items, adjust for gap */
-  text-align: center;
-}
-
-.adventure-item img {
-  width: 100%;
-  /* Image fills its container */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.adventure-item .caption {
-  margin-top: 10px;
-  font-size: 0.9em;
-  color: var(--figure-caption-color);
-  font-style: italic;
+header img {
+  height: 75px;
+  /* Adjust logo size as needed */
+  width: auto;
+  grid-column: 1;
+  /* Place logo in the first column */
 }
 
 .footer {
