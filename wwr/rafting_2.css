@@ -19,6 +19,12 @@
     /* Light gray for adventure gallery background */
     --figure-caption-color: #666;
     /* Color for figure captions */
+    --footer-bg-color: var(--primary-color);
+    /* Footer background */
+    --form-placeholder-color: #aaa;
+    /* Placeholder text color */
+    --map-placeholder-bg: #f0f0f0;
+    /* Background for map placeholder */
 
     /* Font Selection */
     --heading-font: "Arial Black", "Gadget", sans-serif;
