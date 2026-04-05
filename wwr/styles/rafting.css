@@ -35,6 +35,80 @@ head {
   display: none;
 }
 
+/* Body styling */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: var(--accent2-color);
+  /* Set a default background color */
+}
+
+/* Limit page width and center content */
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+  background-color: var(--accent2-color);
+  /* Ensure content areas have white background */
+}
+
+/* Header styling using CSS Grid */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 16px;
+  /* Add padding to the header */
+  display: grid;
+  /* Use Grid for header layout */
+  grid-template-columns: 100px 1fr 2fr;
+  /* Logo on left, nav takes remaining space */
+  align-items: first center;
+  /* Vertically align items */
+  grid-gap: 10px;
+  /* Space between logo and nav */
+}
+
+header img {
+  height: 75px;
+  /* Adjust logo size as needed */
+  width: auto;
+  grid-column: 1;
+  /* Place logo in the first column */
+}
+
+/* Navigation list styling using CSS Flexbox */
+nav ul {
+  list-style: none;
+  /* Remove default list bullets */
+  display: flex;
+  /* Use Flexbox for horizontal layout */
+  justify-content: flex-end;
+  /* Align nav items to the right */
+  gap: 20px;
+  /* Space between nav items */
+  grid-column: 2;
+  /* Place nav in the second column */
+}
+
+nav ul li {
+  margin-left: 0;
+  /* Remove margin as gap handles spacing */
+}
+
+nav ul li a {
+  color: var(--accent2-color);
+  /* White text for nav links */
+  text-decoration: none;
+  /* Remove underline from nav links */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+  /* Change color on hover */
+}
+
 header ul {
   display: flex;
   list-style-type: none;
@@ -55,15 +129,24 @@ header li {
   text-align: center;
 }
 
-.hero img {
-  float: right;
-  width: auto;
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--hero-heading-bg);
+  z-index: 1;
 }
 
 .hero img {
+  float: right;
   display: block;
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 0;
 }
 
 h1 {
@@ -73,8 +156,31 @@ h1 {
   padding: 16px;
   text-align: center;
   opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
+  background-color: var(--hero-heading-bg);
+  color: var(--accent2-color);
+  font-size: 2.5em;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Heading styling */
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-top: 16px;
+  /* Add some top margin for headings */
+  margin-bottom: 8px;
+  /* Add some bottom margin for headings */
+}
+
+/* Navigation and text element styling */
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
 }
 
 .hero article {
@@ -85,7 +191,6 @@ h1 {
   width: 80%;
   max-width: 800px;
   background-color: var(--adventure-gallery-bg);
-  margin: 0;
   color: var(--accent1-color);
   padding: 15px;
   border-radius: 10px;
@@ -94,6 +199,7 @@ h1 {
   align-items: flex-start;
   gap: 15px;
   box-sizing: border-box;
+  z-index: 2;
 }
 
 .hero article img {
@@ -104,6 +210,15 @@ h1 {
   margin-left: 16px;
   border-radius: 20px;
   box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
 }
 
 .history {
@@ -118,47 +233,22 @@ h1 {
   grid-column-end: 4;
 }
 
-h2 {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  background-color: var(--accent1-color);
-}
-
-/* Heading styling */
-h1,
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-top: 16px;
-  /* Add some top margin for headings */
-  margin-bottom: 8px;
-  /* Add some bottom margin for headings */
-}
-
-h2 {
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  unicode-bidi: isolate;
-}
-
 .history p {
   background-color: #ffffff;
   text-align: justify;
 }
 
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
+.history img {
+  grid-column: 2;
+  /* Image placeholder in the second column */
+  background-color: var(--history-image-bg);
+  /* Background color for the placeholder */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  /* Fixed height for the placeholder */
+  border-radius: 8px;
 }
 
 .adventures h2 {
@@ -168,19 +258,22 @@ p {
 
 h2 {
   width: 100%;
-  padding: 10px;
+  padding: 30px 16 px;
   text-align: center;
   background-color: var(--accent1-color);
 }
 
 .adventures {
-  display: grid;
+  display: flex;
+  justify-content: space-around;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  gap: 20px;
   padding: 8px;
 }
 
 .adventures figure {
+  flex-basis: calc(20% - 20px);
+  /* Aim for 5 items, adjust for gap */
   text-align: justify;
 }
 
@@ -221,57 +314,6 @@ header a {
 div {
   display: block;
   unicode-bidi: isolate;
-}
-
-/* Body styling */
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: var(--accent2-color);
-  /* Set a default background color */
-}
-
-/* Header styling using CSS Grid */
-header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-  padding: 16px;
-  /* Add padding to the header */
-  display: grid;
-  /* Use Grid for header layout */
-  grid-template-columns: 100px 1fr 2fr;
-  /* Logo on left, nav takes remaining space */
-  align-items: first center;
-  /* Vertically align items */
-  grid-gap: 10px;
-  /* Space between logo and nav */
-}
-
-/* Limit page width and center content */
-header,
-main,
-footer {
-  width: 840px;
-  margin: 0 auto;
-  background-color: var(--accent2-color);
-  /* Ensure content areas have white background */
-}
-
-/* Navigation and text element styling */
-nav,
-p,
-section,
-article {
-  margin: 16px;
-  padding: 8px;
-}
-
-header img {
-  height: 75px;
-  /* Adjust logo size as needed */
-  width: auto;
-  grid-column: 1;
-  /* Place logo in the first column */
 }
 
 .footer {
