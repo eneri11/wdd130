@@ -144,7 +144,7 @@ main {
 }
 
 .history-content {
-  flex: 2;
+  display: grid;
 }
 
 .history-content h2 {
@@ -163,7 +163,7 @@ main {
 
 .history-image img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /* =========================
