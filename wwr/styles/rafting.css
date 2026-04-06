@@ -260,6 +260,9 @@ p {
 }
 
 .history-content {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
   flex: 2;
   /* Text content takes up more space */
 }
@@ -274,6 +277,7 @@ p {
 .history-content p {
   line-height: 1.6;
   margin-top: 10px;
+  text-align: justify;
 }
 
 .history-image-placeholder {
