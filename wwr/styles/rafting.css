@@ -274,7 +274,7 @@ nav a:hover {
 }
 
 .history-image-placeholder img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   opacity: 0.7;
   /* Slightly faded placeholder image */
