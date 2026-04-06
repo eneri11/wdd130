@@ -148,7 +148,8 @@ main {
 }
 
 .history-content h2 {
-  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .history-image {
