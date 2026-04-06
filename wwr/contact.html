@@ -11,7 +11,7 @@
       content="Get in touch with Exciting Expeditions for rafting reservations, inquiries, or feedback. Contact our team and plan your next adventure today!">
     <meta name="author" content="Irene Costales">
 
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -65,29 +65,25 @@
         <fieldset>
             <legend>Purpose of Message:</legend>
 
-            <label>
-                <input type="radio" name="purpose" value="general" required>
+            <label for="general">
+                <input type="radio" id="general" name="purpose" value="general" required>
                 General Inquiry
             </label>
 
-            <label>
-                <input type="radio" name="purpose" value="reservation">
+            <label for="reservation">
+                <input type="radio" id="reservation" name="purpose" value="reservation">
                 Reservation Question
             </label>
 
-            <label>
-                <input type="radio" name="purpose" value="suggestion">
+            <label for="suggestion">
+                <input type="radio" id="suggestion" name="purpose" value="suggestion">
                 Website Suggestion
             </label>
         </fieldset>
 
-        <!-- Message -->
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
         <!-- Checkbox -->
-        <label class="checkbox">
-            <input type="checkbox" name="subscribe">
+        <label for="subscribe" class="checkbox">
+            <input type="checkbox" id="subscribe" name="subscribe">
             Please subscribe me to the monthly newsletter
         </label>
 
@@ -122,11 +118,17 @@
     <footer>
         <p>©️2026 Exciting Expedition | Irene Costales</p>
 
-        <div class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/linkedIn.png" alt="LinkedIn"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-        </div>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedIn.png" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </nav>
     </footer>
 
 </body>
