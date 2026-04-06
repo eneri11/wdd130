@@ -40,32 +40,10 @@
             <p><strong>Email:</strong> info@excitingexpeditions.com</p>
 
             <!-- Google Map (NO inline style) -->
-            <iframe src="https://www.google.com/maps?q=Grand+Canyon&output=embed"
-              alt="Map Placeholders" width="50">
+            <iframe src="https://www.google.com/maps?q=Grand+Canyon&output=embed" allowfullscreen=""
+              loading="lazy" width="50">
             </iframe>
 
-        </section>
-
-        <!-- EMPLOYEES -->
-        <section class="employees">
-            <h2>Meet Our Team</h2>
-
-            <div class="employee-gallery">
-                <figure>
-                    <img src="images/prof pic4.png" alt="Guide">
-                    <figcaption>John Rivera - Lead Guide</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/prof pic3.png" alt="Manager">
-                    <figcaption>Sarah Lee - Operations Manager</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/prof pic2.png" alt="Support">
-                    <figcaption>Mike Santos - Customer Support</figcaption>
-                </figure>
-            </div>
         </section>
 
         <!-- CONTACT FORM -->
@@ -81,41 +59,62 @@
                 <!-- Email -->
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
-
-                <!-- Purpose (RADIO BUTTONS) -->
-                <fieldset>
-                    <legend>Purpose of Message:</legend>
-
-                    <label>
-                        <input type="radio" name="purpose" value="general" required>
-                        General Inquiry
-                    </label>
-
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
-
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
-                </fieldset>
-
-                <!-- Message -->
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <!-- Checkbox -->
-                <label class="checkbox">
-                    <input type="checkbox" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <!-- Submit -->
-                <button type="submit">Send Message</button>
-
             </form>
+        </section>
+        <!-- Purpose (RADIO BUTTONS) -->
+        <fieldset>
+            <legend>Purpose of Message:</legend>
+
+            <label>
+                <input type="radio" name="purpose" value="general" required>
+                General Inquiry
+            </label>
+
+            <label>
+                <input type="radio" name="purpose" value="reservation">
+                Reservation Question
+            </label>
+
+            <label>
+                <input type="radio" name="purpose" value="suggestion">
+                Website Suggestion
+            </label>
+        </fieldset>
+
+        <!-- Message -->
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- Checkbox -->
+        <label class="checkbox">
+            <input type="checkbox" name="subscribe">
+            Please subscribe me to the monthly newsletter
+        </label>
+
+        <!-- Submit -->
+        <button type="submit">Send Message</button>
+
+
+        <!-- EMPLOYEES -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/prof_pic4.png" alt="Guide">
+                    <figcaption>John Rivera - Lead Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/prof_pic3.png" alt="Manager">
+                    <figcaption>Sarah Lee - Operations Manager</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/prof_pic2.png" alt="Support">
+                    <figcaption>Mike Santos - Customer Support</figcaption>
+                </figure>
+            </div>
         </section>
 
     </main>
