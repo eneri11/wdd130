@@ -246,13 +246,14 @@ p {
 .history-section {
   display: grid;
   /* Use flexbox to place text and image side-by-side */
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   /* Vertically align items */
   gap: 20px;
   /* Space between text and image */
   margin-bottom: 20px;
   /* Space below this section */
-  padding: 20px;
+  padding: 8px;
   /* Padding around the section content */
   background-color: var(--accent2-color);
   /* White background */
