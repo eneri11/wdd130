@@ -46,72 +46,77 @@
 
         </section>
 
-        <!-- CONTACT FORM -->
+        <!-- ONLY ONE FORM -->
         <section class="contact-form">
             <h2>Send Us a Message</h2>
 
             <form action="#" method="post">
 
-                <!-- Name -->
+                <!-- NAME -->
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
 
-                <!-- Email -->
+                <!-- EMAIL -->
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
+
+                <!-- RADIO BUTTONS -->
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <!-- TEXTAREA -->
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <!-- CHECKBOX -->
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit">Send Message</button>
+
             </form>
-        </section>
-        <!-- Purpose (RADIO BUTTONS) -->
-        <fieldset>
-            <legend>Purpose of Message:</legend>
-
-            <label for="general">
-                <input type="radio" id="general" name="purpose" value="general" required>
-                General Inquiry
-            </label>
-
-            <label for="reservation">
-                <input type="radio" id="reservation" name="purpose" value="reservation">
-                Reservation Question
-            </label>
-
-            <label for="suggestion">
-                <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                Website Suggestion
-            </label>
-        </fieldset>
-
-        <!-- Checkbox -->
-        <label for="subscribe" class="checkbox">
-            <input type="checkbox" id="subscribe" name="subscribe">
-            Please subscribe me to the monthly newsletter
-        </label>
-
-        <!-- Submit -->
-        <button type="submit">Send Message</button>
 
 
-        <!-- EMPLOYEES -->
-        <section class="employees">
-            <h2>Meet Our Team</h2>
+            <!-- EMPLOYEES -->
+            <section class="employees">
+                <h2>Meet Our Team</h2>
 
-            <div class="employee-gallery">
-                <figure>
-                    <img src="images/prof_pic4.png" alt="Guide">
-                    <figcaption>John Rivera - Lead Guide</figcaption>
-                </figure>
+                <div class="employee-gallery">
+                    <figure>
+                        <img src="images/prof_pic4.png" alt="Guide">
+                        <figcaption>John Rivera - Lead Guide</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="images/prof_pic3.png" alt="Manager">
-                    <figcaption>Sarah Lee - Operations Manager</figcaption>
-                </figure>
+                    <figure>
+                        <img src="images/prof_pic3.png" alt="Manager">
+                        <figcaption>Sarah Lee - Operations Manager</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="images/prof_pic2.png" alt="Support">
-                    <figcaption>Mike Santos - Customer Support</figcaption>
-                </figure>
-            </div>
-        </section>
+                    <figure>
+                        <img src="images/prof_pic2.png" alt="Support">
+                        <figcaption>Mike Santos - Customer Support</figcaption>
+                    </figure>
+                </div>
+            </section>
 
     </main>
 
