@@ -190,7 +190,7 @@ nav a:hover {
   /* Distance from bottom */
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
+  width: 50%;
   /* Article width */
   background-color: rgba(38, 70, 83, 0.8);
   /* Dark slate blue with transparency */
