@@ -157,7 +157,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 10px;
   background-color: var(--history-image-bg);
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
 }
 
