@@ -207,6 +207,21 @@ nav a:hover {
   /* Slightly rounded corners */
 }
 
+.hero article img {
+  float: right;
+  /* Positions the image to the right */
+  margin-left: 20px;
+  /* Adds some space between the image and the text */
+  margin-bottom: 10px;
+  /* Adds some space below the image */
+  max-width: 40%;
+  /* Ensures the image doesn't take up too much space */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 5px;
+  /* Optional: adds a slight rounding to the image corners */
+}
+
 .hero article h2 {
   color: var(--accent2-color);
   /* White heading */
