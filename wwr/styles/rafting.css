@@ -1,356 +1,277 @@
-:root {
-  /* Color Scheme: Inspired by nature and adventure */
-  --primary-color: #0077cc;
-  /* Deep Blue for water and primary elements */
-  --secondary-color: #f0ad4e;
-  /* Warm Orange - for accents and calls to action */
-  --accent1-color: #333333;
-  /* Dark Gray - for body text */
-  --accent2-color: #ffffff;
-  /* White - for backgrounds and contrast */
-  --hero-heading-bg: #264653;
-  /* Dark Slate Blue for hero heading background */
-  --history-image-bg: #4a4a4a;
-  /* Darker gray for history image placeholder */
-  --adventure-gallery-bg: #e0e0e0;
-  /* Light gray for adventure gallery background */
-  --figure-caption-color: #666;
-  /* Color for figure captions */
+/* rafting.css - Styles based on the provided wireframe */
 
-  /* Font Selection */
+:root {
+  /* Color Scheme (assumed from previous context) */
+  --primary-color: #0077cc;
+  /* Deep Blue */
+  --secondary-color: #f0ad4e;
+  /* Warm Orange */
+  --accent1-color: #333333;
+  /* Dark Gray */
+  --accent2-color: #ffffff;
+  /* White */
+  --hero-heading-bg: #264653;
+  /* Dark Slate Blue */
+  --history-image-bg: #4a4a4a;
+  /* Darker gray */
+  --adventure-gallery-bg: #e0e0e0;
+  /* Light gray */
+  --figure-caption-color: #666;
+  /* Gray for captions */
+  --footer-bg-color: var(--primary-color);
+  /* Footer background */
+  --nav-bg-color: #d1c4e9;
+  /* Light purple for nav background */
+  --logo-placeholder-bg: #e1bee7;
+  /* Light purple for logo placeholder */
+
+  /* Font Selection (assumed) */
   --heading-font: "Arial Black", "Gadget", sans-serif;
-  /* Bold and impactful for headings */
   --body-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* Clean and readable for body text */
 }
 
-/* Reset box-model properties */
+/* --- General Reset & Body --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-head {
-  display: none;
-}
-
-/* Body styling */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
   background-color: var(--accent2-color);
-  /* Set a default background color */
+  /* White background for content */
 }
 
-/* Limit page width and center content */
+/* --- Layout Container --- */
+/* This centers content and limits its width, matching the wireframe's structure */
 header,
 main,
 footer {
   width: 840px;
+  /* Fixed width as seen in wireframe */
   margin: 0 auto;
+  /* Centers the block horizontally */
   background-color: var(--accent2-color);
-  /* Ensure content areas have white background */
+  /* White background for main content areas */
 }
 
-/* Heading styling */
-h1,
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-top: 16px;
-  /* Add some top margin for headings */
-  margin-bottom: 8px;
-  /* Add some bottom margin for headings */
-}
-
-/* Navigation and text element styling */
-nav,
-p,
-section,
-article {
-  margin: 16px;
-  padding: 8px;
-}
-
-/* Header styling using CSS Grid */
+/* --- Header Styling --- */
 header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-  padding: 16px;
-  /* Add padding to the header */
-  display: grid;
-  /* Use Grid for header layout */
-  grid-template-columns: auto 1fr;
-  /* Logo on left, nav takes remaining space */
-  align-items: first center;
-  /* Vertically align items */
-  grid-gap: 20px;
+  background-color: var(--nav-bg-color);
+  /* Light purple background */
+  padding: 20px 0;
+  /* Top/bottom padding, no side padding to let nav/logo span width */
+  display: flex;
+  /* Use flexbox for logo and nav alignment */
+  align-items: center;
+  /* Vertically align logo and nav */
+  gap: 20px;
   /* Space between logo and nav */
 }
 
-header img {
-  height: 75px;
-  /* Adjust logo size as needed */
-  width: auto;
-  grid-column: 1;
-  /* Place logo in the first column */
+.logo-placeholder {
+  width: 150px;
+  /* Approximate width for logo area */
+  height: 100px;
+  /* Approximate height for logo area */
+  background-color: var(--logo-placeholder-bg);
+  /* Light purple placeholder */
+  margin-left: 20px;
+  /* Space from the left edge of the header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  /* Subtle border for placeholder */
+  flex-shrink: 0;
+  /* Prevent logo area from shrinking */
 }
 
-/* Navigation list styling using CSS Flexbox */
+.logo-placeholder .icon-placeholder {
+  font-size: 2em;
+  /* Size for the icon within the logo */
+  color: #9a74b4;
+  /* A slightly darker purple */
+}
+
 nav ul {
   list-style: none;
-  /* Remove default list bullets */
+  /* Remove bullet points */
   display: flex;
-  /* Use Flexbox for horizontal layout */
-  justify-content: flex-end;
-  /* Align nav items to the right */
+  /* Arrange nav items horizontally */
   gap: 20px;
-  /* Space between nav items */
-  grid-column: 2;
-  /* Place nav in the second column */
+  /* Space between nav links */
 }
 
-nav ul li {
-  margin-left: 0;
-  /* Remove margin as gap handles spacing */
+nav li {
+  display: inline;
+  /* Ensure list items are inline */
 }
 
-nav ul li a {
-  color: var(--accent2-color);
-  /* White text for nav links */
+nav a {
   text-decoration: none;
-  /* Remove underline from nav links */
+  /* Remove underline */
+  color: var(--primary-color);
+  /* Blue links */
   font-weight: bold;
+  font-size: 1.1em;
 }
 
-nav ul li a:hover {
+nav a:hover {
   color: var(--secondary-color);
-  /* Change color on hover */
+  /* Orange on hover */
 }
 
-header ul {
-  display: flex;
-  list-style-type: none;
-}
-
-header li {
-  flex: 1 1 auto;
-  background-color: #1e016e;
-  border: 1px solid rgb(37, 11, 130);
-  padding: 0px;
-  font-size: 20px;
-  text-align: center;
-}
-
-/* Hero section styling */
+/* --- Hero Section Styling --- */
 .hero {
   position: relative;
+  /* Needed for absolute positioning of overlay and text */
   text-align: center;
+  margin-bottom: 20px;
+  /* Space below hero */
+  background-color: var(--accent2-color);
+  /* White background for hero section */
+  padding: 0;
+  /* Remove padding that might interfere with image */
+}
+
+.hero img {
+  display: block;
+  /* Remove extra space below image */
+  width: 100%;
+  /* Make image fill the width of its container */
+  height: auto;
+  /* Maintain aspect ratio */
+  max-height: 400px;
+  /* Limit height to prevent excessively tall hero images */
+  object-fit: cover;
+  /* Ensure image covers the area without distortion */
 }
 
 .hero::before {
+  /* Overlay for text readability */
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--hero-heading-bg);
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Semi-transparent black overlay */
   z-index: 1;
 }
 
-.hero img {
-  float: right;
-  display: block;
-  width: 100%;
-  height: auto;
-  position: relative;
-  z-index: 0;
-}
-
-h1 {
+.hero h1 {
   position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--hero-heading-bg);
+  /* Position title over the image */
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Fine-tune centering */
   color: var(--accent2-color);
-  font-size: 2.5em;
-  box-sizing: border-box;
+  /* White text */
+  font-size: 3em;
+  /* Large font size */
   z-index: 2;
+  /* Ensure text is above overlay */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Add shadow for better readability */
 }
 
 .hero article {
   position: absolute;
+  /* Position article below title */
   bottom: 20px;
-  left: 20px;
-  transform: translateX(-65%);
-  width: 80%;
-  max-width: 800px;
-  background-color: var(--adventure-gallery-bg);
-  color: var(--accent1-color);
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  box-sizing: border-box;
-  z-index: 2;
-}
-
-.hero article img {
-  background-color: var(--hero-heading-bg);
-  float: right;
-  width: 125px;
-  height: auto;
-  margin-left: 16px;
-  border-radius: 20px;
-  box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.2);
-}
-
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
-}
-
-.history {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  padding: 8px;
-}
-
-.history h2 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-.history p {
-  background-color: #ffffff;
-  text-align: justify;
-}
-
-.history img {
-  grid-column: 2;
-  /* Image placeholder in the second column */
-  background-color: var(--history-image-bg);
-  /* Background color for the placeholder */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  /* Fixed height for the placeholder */
-  border-radius: 8px;
-}
-
-.adventures h2 {
-  grid-column-start: 1;
-  grid-column-end: 6;
-}
-
-h2 {
-  width: 100%;
-  padding: 30px 16 px;
-  text-align: center;
-  background-color: var(--accent1-color);
-}
-
-.adventures {
-  display: flex;
-  justify-content: space-around;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  padding: 8px;
-}
-
-.adventures figure {
-  flex-basis: calc(20% - 20px);
-  /* Aim for 5 items, adjust for gap */
-  text-align: justify;
-}
-
-/* Styling for figure and figcaption elements */
-figure {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  unicode-bidi: isolate-;
-}
-
-.adventures img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
-
-figcaption {
-  display: block;
-  unicode-bidi: isolate;
-}
-
-header a {
-  display: block;
-  text-align: center;
-  padding: 1rem;
-  text-decoration: none;
-  color: #fff;
-}
-
-div {
-  display: block;
-  unicode-bidi: isolate;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #000;
-  padding: 10px 0;
-}
-
-/* Footer styling */
-footer {
-  background-color: var(--primary-color);
+  /* Distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  /* Article width */
+  background-color: rgba(38, 70, 83, 0.8);
+  /* Dark slate blue with transparency */
   color: var(--accent2-color);
-  text-align: center;
-  padding: 2px;
+  /* White text */
+  padding: 20px;
+  z-index: 2;
+  /* Above overlay */
+  text-align: left;
+  /* Align article text to the left */
+  border-radius: 5px;
+  /* Slightly rounded corners */
 }
 
-.footer p {
-  margin: 0;
-  /* Space between copyright and social media */
+.hero article h2 {
+  color: var(--accent2-color);
+  /* White heading */
+  margin-bottom: 10px;
 }
 
-.socialmedia {
+.hero article p {
+  color: var(--accent2-color);
+  /* White paragraph text */
+  line-height: 1.6;
+}
+
+/* --- History Section Styling --- */
+.history-section {
   display: flex;
-  justify-content: right;
-  gap: 10px;
-  /* Space between social media icons */
-  justify-content: space-around;
-  /* Distribute items evenly */
-  flex-wrap: wrap;
-  /* Allow items to wrap to the next line if needed */
+  /* Use flexbox to place text and image side-by-side */
+  align-items: center;
+  /* Vertically align items */
+  gap: 20px;
+  /* Space between text and image */
+  margin-bottom: 20px;
+  /* Space below this section */
+  padding: 20px;
+  /* Padding around the section content */
+  background-color: var(--accent2-color);
+  /* White background */
 }
 
-.socialmedia a {
-  text-decoration: none;
-  /* Removes the underline */
-  display: inline-block;
-  /* Ensures the link respects padding/margins if needed */
+.history-content {
+  flex: 2;
+  /* Text content takes up more space */
 }
+
+.history-content h2 {
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+}
+
+.history-content p {
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.history-image-placeholder {
+  flex: 1;
+  /* Image placeholder takes less space */
+  background-color: var(--history-image-bg);
+  /* Dark gray background */
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.history-image-placeholder img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.7;
+  /* Slightly faded placeholder image */
+}
+
+.history-image-placeholder p {
+  color: var(--accent2-color);
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* --- Adventure Section Styling --- */
+.adventure-section {
+  text-align: center;
+  background-color: var(--adventure-gallery-bg);
+  /* Light
