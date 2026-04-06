@@ -142,7 +142,7 @@ nav a:hover {
   /* Make image fill the width of its container */
   height: auto;
   /* Maintain aspect ratio */
-  max-height: 100px;
+  max-height: 400px;
   /* Limit height to prevent excessively tall hero images */
   object-fit: cover;
   /* Ensure image covers the area without distortion */
@@ -256,8 +256,8 @@ nav a:hover {
 }
 
 .history-image-placeholder img {
-  max-width: 20%;
-  height: 20%;
+  max-width: 100%;
+  height: auto;
   opacity: 0.7;
   /* Slightly faded placeholder image */
 }
@@ -272,4 +272,4 @@ nav a:hover {
 .adventure-section {
   text-align: center;
   background-color: var(--adventure-gallery-bg);
-}
+  /* Light
