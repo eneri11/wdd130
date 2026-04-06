@@ -244,7 +244,7 @@ p {
 
 /* --- History Section Styling --- */
 .history-section {
-  display: flex;
+  display: grid;
   /* Use flexbox to place text and image side-by-side */
   align-items: center;
   /* Vertically align items */
