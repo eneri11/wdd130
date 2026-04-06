@@ -222,9 +222,9 @@ nav a:hover {
 }
 
 p {
-  display: inline flow-root;
-  margin-block-start: 2em;
-  margin-block-end: 2em;
+  display: flex;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   unicode-bidi: isolate;
