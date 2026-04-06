@@ -4,8 +4,8 @@
 
 /* Contact Info */
 .contact-info iframe {
-    width: 100%;
-    height: 300px;
+    width: 50%;
+    height: 200px;
     border: none;
     /* replaces inline style */
     margin-top: 10px;
@@ -26,15 +26,15 @@
 
 .employee-gallery img {
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
     border-radius: 5px;
 }
 
 /* Form */
 .contact-form form {
-    display: flex;
+    display: grid;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     margin-top: 15px;
 }
 
