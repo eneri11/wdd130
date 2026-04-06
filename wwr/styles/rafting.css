@@ -1,5 +1,5 @@
 :root {
-  /* Color Scheme (assumed from previous context) */
+  /* Color Scheme */
   --primary-color: #0077cc;
   /* Deep Blue */
   --secondary-color: #f0ad4e;
@@ -8,6 +8,7 @@
   /* Dark Gray */
   --accent2-color: #ffffff;
   /* White */
+  /* --hero-bg-color: rgba(0, 0, 0, 0.5); -- REMOVED: As it was unused */
   --hero-heading-bg: #264653;
   /* Dark Slate Blue */
   --history-image-bg: #4a4a4a;
@@ -18,12 +19,16 @@
   /* Gray for captions */
   --footer-bg-color: var(--primary-color);
   /* Footer background */
+  --form-placeholder-color: #aaa;
+  /* Placeholder text color */
+  --map-placeholder-bg: #f0f0f0;
+  /* Background for map placeholder */
   --nav-bg-color: #d1c4e9;
   /* Light purple for nav background */
   --logo-placeholder-bg: #e1bee7;
   /* Light purple for logo placeholder */
 
-  /* Font Selection (assumed) */
+  /* Font Selection */
   --heading-font: "Arial Black", "Gadget", sans-serif;
   --body-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
