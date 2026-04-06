@@ -1,310 +1,261 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
 :root {
   /* Color Scheme */
   --primary-color: #0077cc;
-  /* Deep Blue */
   --secondary-color: #f0ad4e;
-  /* Warm Orange */
   --accent1-color: #333333;
-  /* Dark Gray */
   --accent2-color: #ffffff;
-  /* White */
-  /* --hero-bg-color: rgba(0, 0, 0, 0.5); -- REMOVED: As it was unused */
-  --hero-heading-bg: #264653;
-  /* Dark Slate Blue */
-  --history-image-bg: #4a4a4a;
-  /* Darker gray */
-  --adventure-gallery-bg: #e0e0e0;
-  /* Light gray */
-  --figure-caption-color: #666;
-  /* Gray for captions */
-  --footer-bg-color: var(--primary-color);
-  /* Footer background */
-  --form-placeholder-color: #aaa;
-  /* Placeholder text color */
-  --map-placeholder-bg: #f0f0f0;
-  /* Background for map placeholder */
-  --nav-bg-color: #d1c4e9;
-  /* Light purple for nav background */
 
-  /* Font Selection */
+  --hero-heading-bg: #264653;
+  --history-image-bg: #4a4a4a;
+  --adventure-gallery-bg: #e0e0e0;
+  --figure-caption-color: #666;
+  --footer-bg-color: var(--primary-color);
+  --form-placeholder-color: #aaa;
+  --map-placeholder-bg: #f0f0f0;
+  --nav-bg-color: #d1c4e9;
+
+  /* Fonts */
   --heading-font: "Arial Black", "Gadget", sans-serif;
   --body-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* --- General Reset & Body --- */
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* =========================
+   GLOBAL
+========================= */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
-  background-color: var(--accent2-color);
-  /* White background for content */
+  line-height: 1.6;
 }
 
-/* --- Layout Container --- */
-/* This centers content and limits its width, matching the wireframe's structure */
-header,
-main,
-footer {
-  width: 840px;
-  /* Fixed width as seen in wireframe */
-  margin: 0 auto;
-  /* Centers the block horizontally */
-  background-color: var(--accent2-color);
-  /* White background for main content areas */
+h1,
+h2 {
+  font-family: var(--heading-font);
 }
 
-/* --- Header Styling --- */
+/* =========================
+   HEADER (SIDEBAR)
+========================= */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
   background-color: var(--nav-bg-color);
-  /* Light purple background */
-  padding: 20px 0;
-  /* Top/bottom padding, no side padding to let nav/logo span width */
-  display: flex;
-  /* Use flexbox for logo and nav alignment */
-  align-items: center;
-  /* Vertically align logo and nav */
-  gap: 20px;
-  /* Space between logo and nav */
+  padding: 20px;
 }
 
-.logo-placeholder {
-  width: 150px;
-  /* Approximate width for logo area */
-  height: 100px;
-  /* Approximate height for logo area */
-  background-color: var(--logo-placeholder-bg);
-  /* Light purple placeholder */
-  margin-left: 20px;
-  /* Space from the left edge of the header */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ccc;
-  /* Subtle border for placeholder */
-  flex-shrink: 0;
-  /* Prevent logo area from shrinking */
+header img {
+  display: block;
+  width: 120px;
+  margin-bottom: 20px;
 }
 
-.logo-placeholder .icon-placeholder {
-  font-size: 2em;
-  /* Size for the icon within the logo */
-  color: #9a74b4;
-  /* A slightly darker purple */
-}
-
+/* NAVIGATION */
 nav ul {
   list-style: none;
-  /* Remove bullet points */
-  display: flex;
-  /* Arrange nav items horizontally */
-  gap: 20px;
-  /* Space between nav links */
 }
 
 nav li {
-  display: inline;
-  /* Ensure list items are inline */
+  margin: 15px 0;
 }
 
 nav a {
   text-decoration: none;
-  /* Remove underline */
   color: var(--primary-color);
-  /* Blue links */
   font-weight: bold;
-  font-size: 1.1em;
 }
 
 nav a:hover {
   color: var(--secondary-color);
-  /* Orange on hover */
 }
 
-/* --- Hero Section Styling --- */
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
   position: relative;
-  /* Needed for absolute positioning of overlay and text */
-  text-align: justify;
-  margin-bottom: 20px;
-  /* Space below hero */
-  background-color: var(--accent2-color);
-  /* White background for hero section */
-  padding: 0;
-  /* Remove padding that might interfere with image */
+  text-align: center;
 }
 
 .hero img {
-  display: block;
-  /* Remove extra space below image */
   width: 100%;
-  /* Make image fill the width of its container */
-  height: auto;
-  /* Maintain aspect ratio */
-  max-height: 400px;
-  /* Limit height to prevent excessively tall hero images */
-  object-fit: cover;
-  /* Ensure image covers the area without distortion */
+  border-radius: 5px;
 }
 
-.hero::before {
-  /* Overlay for text readability */
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  /* Semi-transparent black overlay */
-  z-index: 1;
-}
-
+/* Title overlay */
 .hero h1 {
   position: absolute;
-  /* Position title over the image */
-  top: 20px;
-  /* Center vertically */
+  top: 20%;
   left: 50%;
-  /* Center horizontally */
   transform: translate(-50%, -50%);
-  /* Fine-tune centering */
+  background: var(--hero-heading-bg);
   color: var(--accent2-color);
-  /* White text */
-  font-size: 3em;
-  /* Large font size */
-  z-index: 2;
-  /* Ensure text is above overlay */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  /* Add shadow for better readability */
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
+/* Mission box */
 .hero article {
   position: absolute;
-  /* Position article below title */
-  bottom: 20px;
-  /* Distance from bottom */
-  left: 20px;
+  bottom: 10%;
+  left: 50%;
   transform: translateX(-50%);
-  width: 50%;
-  /* Article width */
-  background-color: rgba(38, 70, 83, 0.8);
-  /* Dark slate blue with transparency */
-  color: var(--accent2-color);
-  /* White text */
-  padding: 20px;
-  z-index: 2;
-  /* Above overlay */
-  text-align: left;
-  /* Align article text to the left */
+  background: var(--accent2-color);
+  padding: 15px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
   border-radius: 5px;
-  /* Slightly rounded corners */
 }
 
 .hero article img {
-  float: right;
-  /* Positions the image to the right */
-  width: 125px;
-  margin-left: 20px;
-  /* Adds some space between the image and the text */
-  margin-bottom: 10px;
-  /* Adds some space below the image */
-  max-width: 40%;
-  /* Ensures the image doesn't take up too much space */
-  height: auto;
-  /* Maintain aspect ratio */
+  width: 80px;
   border-radius: 5px;
-  /* Optional: adds a slight rounding to the image corners */
 }
 
-p {
-  display: flex;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
-}
-
-.hero article h2 {
-  color: var(--accent2-color);
-  /* White heading */
-  margin-bottom: 10px;
-}
-
-.hero article p {
-  color: var(--accent2-color);
-  /* White paragraph text */
-  line-height: 1;
-}
-
-/* --- History Section Styling --- */
+/* =========================
+   HISTORY SECTION
+========================= */
 .history-section {
-  display: grid;
-  /* Use flexbox to place text and image side-by-side */
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  /* Vertically align items */
+  display: flex;
   gap: 20px;
-  /* Space between text and image */
-  margin-bottom: 20px;
-  /* Space below this section */
-  padding: 8px;
-  /* Padding around the section content */
-  background-color: var(--accent2-color);
-  /* White background */
+  margin-top: 40px;
 }
 
 .history-content {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
   flex: 2;
-  /* Text content takes up more space */
 }
 
 .history-content h2 {
-  color: var(--primary-color);
-  font-family: var(--heading-font);
-  grid-column-start: 1;
-  grid-column-end: 4;
+  margin-bottom: 10px;
 }
 
-.history-content p {
-  line-height: 1.6;
-  margin-top: 10px;
-  text-align: justify;
-}
-
-.history-image-placeholder {
+.history-image {
   flex: 1;
-  /* Image placeholder takes less space */
   background-color: var(--history-image-bg);
-  /* Dark gray background */
-  padding: 15px;
-  text-align: center;
+  padding: 10px;
+}
+
+.history-image img {
+  width: 100%;
   border-radius: 5px;
 }
 
-.history-image-placeholder img {
-  max-width: 50%;
-  height: auto;
-  opacity: 0.7;
-  /* Slightly faded placeholder image */
-}
-
-.history-image-placeholder p {
-  color: var(--accent2-color);
-  font-size: 0.9em;
-  margin-top: 5px;
-}
-
-/* --- Adventure Section Styling --- */
+/* =========================
+   ADVENTURE SECTION
+========================= */
 .adventure-section {
+  margin-top: 40px;
+}
+
+.adventure-section h2 {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
   background-color: var(--adventure-gallery-bg);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.adventure-gallery figure {
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: var(--figure-caption-color);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.socialmedia img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+
+  header {
+    position: static;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  .history-section {
+    flex-direction: column;
+  }
+
+  .hero article {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    position: static;
+    transform: none;
+    margin: 10px 0;
+  }
 }
