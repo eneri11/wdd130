@@ -179,7 +179,7 @@ main {
 .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
+    gap: 10px;
     background-color: var(--adventure-gallery-bg);
     padding: 15px;
     border-radius: 5px;
