@@ -1,0 +1,158 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
+:root {
+    --primary-color: #055a05;
+    /* forest green */
+    --secondary-color: #f4a261;
+    /* warm sand */
+    --accent1-color: #264653;
+    /* dark slate blue */
+    --accent2-color: #e9c46a;
+    /* light golden yellow */
+
+    --heading-font: "Times New Roman", Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+/* CENTER PAGE */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* HEADINGS */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* GENERAL SPACING */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+}
+
+header img {
+    width: 120px;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    position: relative;
+}
+
+/* HERO IMAGE */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* HERO TITLE OVERLAY */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+
+    background-color: var(--accent1-color);
+    color: white;
+    opacity: 0.8;
+}
+
+/* HERO ARTICLE (MISSION BOX) */
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+
+    background-color: var(--accent2-color);
+    padding: 16px;
+    border: 2px solid var(--primary-color);
+}
+
+/* IMAGE INSIDE ARTICLE */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 10px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section h2 {
+    text-align: center;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+}
+
+/* SOCIAL MEDIA */
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- IMPORTANT: Updated Title + Description -->
+    <title>Contact Us - Exciting Expeditions Rafting</title>
+    <meta name="description"
+      content="Get in touch with Exciting Expeditions for rafting reservations, inquiries, or feedback. Contact our team and plan your next adventure today!">
+    <meta name="author" content="Irene Costales">
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/z-wwr-blue.jpg" alt="Exciting Expeditions Logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a class="current" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- COMPANY INFO -->
+        <section class="contact-info">
+            <h1>White Water Rafting Company</h1>
+
+            <p><strong>Address:</strong> 123 River Rapids Rd, Adventure City</p>
+            <p><strong>Phone:</strong> +1 800 555 1234</p>
+            <p><strong>Email:</strong> info@excitingexpeditions.com</p>
+
+            <!-- Google Map (NO inline style) -->
+            <iframe src="https://www.google.com/maps?q=Grand+Canyon&output=embed" allowfullscreen=""
+              loading="lazy" width="50">
+            </iframe>
+
+        </section>
+
+        <!-- ONLY ONE FORM -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form action="#" method="post">
+
+                <!-- NAME -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- EMAIL -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- RADIO BUTTONS -->
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <!-- TEXTAREA -->
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <!-- CHECKBOX -->
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit">Send Message</button>
+
+            </form>
+
+
+            <!-- EMPLOYEES -->
+            <section class="employees">
+                <h2>Meet Our Team</h2>
+
+                <div class="employee-gallery">
+                    <figure>
+                        <img src="images/prof_pic4.png" alt="Guide">
+                        <figcaption>John Rivera - Lead Guide</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/prof_pic3.png" alt="Manager">
+                        <figcaption>Sarah Lee - Operations Manager</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/prof_pic2.png" alt="Support">
+                        <figcaption>Mike Santos - Customer Support</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+    </main>
+
+    <footer>
+        <p>©️2026 Exciting Expedition | Irene Costales</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

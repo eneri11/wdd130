@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Exciting Expedition</title>
-    <meta name="description"
-      content="Learn about Exciting Expeditions, your premier white water rafting company. Discover our history, mission, and the adventures that await you.">
-    <meta name="author" content="Irene Costales">
-    <link rel="stylesheet" href="styles/rafting_2.css">
 
+    <title>Exciting Expeditions | White Water Rafting Adventures</title>
+    <meta name="description"
+      content="Experience thrilling white water rafting adventures with Exciting Expeditions. Book trips, explore destinations, and start your adventure today!">
+
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+
     <header>
         <img src="images/z-wwr-blue.jpg" alt="Logo">
 
@@ -29,110 +30,58 @@
     <main>
 
         <!-- HERO -->
-        <div class="hero">
-            <img src="images/rafting14_1024.jpg" alt="Hero Image">
-            <h1>Rafting Company Title</h1>
-            <article>
-                <h2> Our Mission</h2>
-                <img src="images/rafting36_1024.jpg" alt="Client">
-                <p>
-                    At Exciting Expeditions, we provide thrilling and unforgettable rafting
-                    experiences
-                    with safety and fun guaranteed!
-                </p>
-            </article>
-        </div>
+        <section class="hero">
+            <img src="images/rafting14_1024.jpg" alt="Rafting Adventure">
+            <h1>Experience the Thrill of White Water Rafting</h1>
+        </section>
 
-        <!-- HISTORY -->
-        <section class="history-section">
-            <div class="history-content">
-                <h2>History</h2>
-                <p>
-                    Exciting Expeditions was founded in 1995 by a group of adventure enthusiasts who
-                    wanted to share their love for the great outdoors. Starting with just a handful
-                    of rafts and a passion for exploration, the company has grown into a leading
-                    provider of white water rafting experiences. We are committed to offering
-                    unparalleled
-                    adventures while respecting and preserving the natural beauty of the rivers we
-                    navigate.
-                </p>
+        <!-- CTA -->
+        <section class="cta">
+            <h2>Ready for Adventure?</h2>
+            <p>Explore our exciting rafting trips and book your next journey today!</p>
+            <a href="trips.html" class="cta-button">View Trips</a>
+        </section>
+
+        <!-- GRID CONTENT -->
+        <section class="home-grid">
+            <div>
+                <img src="images/rafting58_600.jpg" alt="">
+                <h3>Unforgettable Experiences</h3>
+                <p>Join us for thrilling river adventures guided by experts.</p>
             </div>
 
-            <div class="history-image">
-                <img src="images/history_placeholder.png" alt="History Image">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium porro aperiam
-                    dicta. Maiores sint omnis blanditiis recusandae asperiores iusto sed!
-                </p>
+            <div>
+                <img src="images/rafting20_600.jpg" alt="">
+                <h3>For All Skill Levels</h3>
+                <p>Whether beginner or expert, we have the perfect trip.</p>
             </div>
         </section>
 
-        <!-- ADVENTURE -->
-        <section class="adventure-section">
-            <h2>Adventure Awaits You</h2>
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
 
-            <div class="adventure-gallery">
-                <figure>
-                    <img src="images/rafting58_600.jpg" alt="Los Dientes del Diablo">
-                    <figcaption>Los Dientes del Diablo - Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Ducimus ullam totam
-                        doloremque exercitationem quisquam ea, adipisci veritatis natus blanditiis
-                        minus.
-                    </figcaption>
-                </figure>
+            <form>
+                <label for="nname">Name:</label>
+                <input type="text" id="nname" name="name" required>
 
-                <figure>
-                    <img src="images/rafting15_1024.jpg" alt="Big Mallard">
-                    <figcaption>Big Mallard - Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                        Ducimus
-                        ullam totam
-                        doloremque exercitationem quisquam ea, adipisci veritatis natus blanditiis
-                        minus.
-                    </figcaption>
-                </figure>
+                <label for="nemail">Email:</label>
+                <input type="email" id="nemail" name="email" required>
 
-                <figure>
-                    <img src="images/rafting20_600.jpg" alt="Half Day Adventure">
-                    <figcaption>Half Day Adventure - Lorem ipsum dolor sit amet consectetur
-                        adipisicing
-                        elit. Ducimus ullam totam
-                        doloremque exercitationem quisquam ea, adipisci veritatis natus blanditiis
-                        minus.
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/rafting41_1024.jpg" alt="The Great Rapids">
-                    <figcaption>The Great Rapids - Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit.
-                        Ducimus ullam totam
-                        doloremque exercitationem quisquam ea, adipisci veritatis natus blanditiis
-                        minus.
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/rafting59_600.jpg" alt="Sunset Float">
-                    <figcaption>Sunset Float - Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                        Ducimus
-                        ullam totam
-                        doloremque exercitationem quisquam ea, adipisci veritatis natus blanditiis
-                        minus.
-                    </figcaption>
-                </figure>
-            </div>
+                <button type="submit">Subscribe Now</button>
+            </form>
         </section>
+
     </main>
 
     <footer>
         <p>©️2026 Exciting Expedition | Irene Costales</p>
 
-        <div class="socialmedia">
+        <nav class="socialmedia">
             <a href="#"><img src="images/facebook.png" alt=""></a>
             <a href="#"><img src="images/linkedIn.png" alt=""></a>
             <a href="#"><img src="images/instagram.png" alt=""></a>
-        </div>
+        </nav>
     </footer>
 
 </body>
