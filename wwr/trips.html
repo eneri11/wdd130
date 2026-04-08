@@ -5,134 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- IMPORTANT: Updated Title + Description -->
-    <title>Contact Us - Exciting Expeditions Rafting</title>
+    <title>Trips | Exciting Expeditions</title>
     <meta name="description"
-      content="Get in touch with Exciting Expeditions for rafting reservations, inquiries, or feedback. Contact our team and plan your next adventure today!">
+      content="Explore exciting rafting trips with Exciting Expeditions. Choose from beginner to advanced adventures.">
     <meta name="author" content="Irene Costales">
 
-    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="styles/rafting_3.css">
 </head>
 
 <body>
 
     <header>
-        <img src="images/z-wwr-blue.jpg" alt="Exciting Expeditions Logo">
+        <img src="images/z-wwr-blue.jpg" alt="Logo">
 
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a class="current" href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <!-- COMPANY INFO -->
-        <section class="contact-info">
-            <h1>White Water Rafting Company</h1>
+        <!-- CTA -->
+        <section class="cta">
+            <h1>Our Rafting Trips</h1>
+            <p>Have questions? <a href="contact.html">Contact us today!</a></p>
+        </section>
 
-            <p><strong>Address:</strong> 123 River Rapids Rd, Adventure City</p>
-            <p><strong>Phone:</strong> +1 800 555 1234</p>
-            <p><strong>Email:</strong> info@excitingexpeditions.com</p>
+        <!-- TRIPS GRID -->
+        <section class="trips-grid">
 
-            <!-- Google Map (NO inline style) -->
-            <iframe src="https://www.google.com/maps?q=Grand+Canyon&output=embed" allowfullscreen=""
-              loading="lazy" width="50">
-            </iframe>
+            <div>
+                <img src="images/rafting58_600.jpg" alt="">
+                <h2>Beginner Rapids</h2>
+                <p>Perfect for first-time rafters. Calm waters with light excitement.</p>
+            </div>
+
+            <div>
+                <img src="images/rafting15_1024.jpg" alt="">
+                <h2>Intermediate Adventure</h2>
+                <p>Stronger currents and thrilling rapids for experienced adventurers.</p>
+            </div>
+
+            <div>
+                <img src="images/rafting59_600.jpg" alt="">
+                <h2>Extreme Challenge</h2>
+                <p>High-intensity rapids for adrenaline seekers.</p>
+            </div>
 
         </section>
 
-        <!-- ONLY ONE FORM -->
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
+        <!-- TABLE -->
+        <section>
+            <h2>Available Trips</h2>
 
-            <form action="#" method="post">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
 
-                <!-- NAME -->
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+                <tbody>
+                    <tr>
+                        <td>Beginner Rapids</td>
+                        <td>2 Hours</td>
+                        <td>Easy</td>
+                        <td>$50</td>
+                    </tr>
 
-                <!-- EMAIL -->
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                    <tr>
+                        <td>Intermediate Adventure</td>
+                        <td>4 Hours</td>
+                        <td>Moderate</td>
+                        <td>$90</td>
+                    </tr>
 
-                <!-- RADIO BUTTONS -->
-                <fieldset>
-                    <legend>Purpose of Message:</legend>
-
-                    <label for="general">
-                        <input type="radio" id="general" name="purpose" value="general" required>
-                        General Inquiry
-                    </label>
-
-                    <label for="reservation">
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
-
-                    <label for="suggestion">
-                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
-                </fieldset>
-
-                <!-- TEXTAREA -->
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <!-- CHECKBOX -->
-                <label for="subscribe">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <!-- SUBMIT BUTTON -->
-                <button type="submit">Send Message</button>
-
-            </form>
-
-
-            <!-- EMPLOYEES -->
-            <section class="employees">
-                <h2>Meet Our Team</h2>
-
-                <div class="employee-gallery">
-                    <figure>
-                        <img src="images/prof_pic4.png" alt="Guide">
-                        <figcaption>John Rivera - Lead Guide</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/prof_pic3.png" alt="Manager">
-                        <figcaption>Sarah Lee - Operations Manager</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/prof_pic2.png" alt="Support">
-                        <figcaption>Mike Santos - Customer Support</figcaption>
-                    </figure>
-                </div>
-            </section>
+                    <tr>
+                        <td>Extreme Challenge</td>
+                        <td>Full Day</td>
+                        <td>Hard</td>
+                        <td>$150</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
     </main>
 
     <footer>
-        <p>©️2026 Exciting Expedition | Irene Costales</p>
+        <p>©️2026 Exciting Expeditions | Irene Costales</p>
 
         <nav class="socialmedia">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-                <img src="images/linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="Instagram">
-            </a>
+            <a href="#"><img src="images/facebook.png" alt=""></a>
+            <a href="#"><img src="images/linkedIn.png" alt=""></a>
+            <a href="#"><img src="images/instagram.png" alt=""></a>
         </nav>
     </footer>
 
