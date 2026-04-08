@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- IMPORTANT: Updated Title + Description -->
-    <title>Contact Us - Exciting Expeditions Rafting</title>
+    <!-- UPDATED -->
+    <title>Contact Us | Exciting Expeditions</title>
     <meta name="description"
-      content="Get in touch with Exciting Expeditions for rafting reservations, inquiries, or feedback. Contact our team and plan your next adventure today!">
+      content="Contact Exciting Expeditions for rafting inquiries, reservations, or feedback. We are here to help you plan your next adventure.">
     <meta name="author" content="Irene Costales">
 
     <link rel="stylesheet" href="styles/rafting.css">
@@ -16,6 +16,7 @@
 
 <body>
 
+    <!-- SAME HEADER -->
     <header>
         <img src="images/z-wwr-blue.jpg" alt="Exciting Expeditions Logo">
 
@@ -24,7 +25,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a class="current" href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -32,37 +33,34 @@
     <main>
 
         <!-- COMPANY INFO -->
-        <section class="contact-info">
+        <section class="contact-header">
             <h1>White Water Rafting Company</h1>
-
-            <p><strong>Address:</strong> 123 River Rapids Rd, Adventure City</p>
-            <p><strong>Phone:</strong> +1 800 555 1234</p>
-            <p><strong>Email:</strong> info@excitingexpeditions.com</p>
-
-            <!-- Google Map (NO inline style) -->
-            <iframe src="https://www.google.com/maps?q=Grand+Canyon&output=embed" allowfullscreen=""
-              loading="lazy" width="50">
-            </iframe>
-
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
         </section>
 
-        <!-- ONLY ONE FORM -->
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
+        <!-- MAP + FORM -->
+        <section class="contact-layout">
 
-            <form action="#" method="post">
+            <!-- MAP -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps?q=Kolob+Utah&output=embed" loading="lazy">
+                </iframe>
+            </div>
 
-                <!-- NAME -->
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+            <!-- FORM -->
+            <form>
 
-                <!-- EMAIL -->
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter name" required>
 
-                <!-- RADIO BUTTONS -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" required>
+
                 <fieldset>
-                    <legend>Purpose of Message:</legend>
+                    <legend>Message Purpose</legend>
 
                     <label for="general">
                         <input type="radio" id="general" name="purpose" value="general" required>
@@ -80,59 +78,52 @@
                     </label>
                 </fieldset>
 
-                <!-- TEXTAREA -->
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type here" required></textarea>
 
-                <!-- CHECKBOX -->
-                <label for="subscribe">
+                <label for="subscribe" class="checkbox">
                     <input type="checkbox" id="subscribe" name="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
 
-                <!-- SUBMIT BUTTON -->
-                <button type="submit">Send Message</button>
+                <button type="submit">Get in Touch!</button>
 
             </form>
 
+        </section>
 
-            <!-- EMPLOYEES -->
-            <section class="employees">
-                <h2>Meet Our Team</h2>
+        <!-- EMPLOYEES -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
 
-                <div class="employee-gallery">
-                    <figure>
-                        <img src="images/prof_pic4.png" alt="Guide">
-                        <figcaption>John Rivera - Lead Guide</figcaption>
-                    </figure>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/profpic_4.jpg" alt="Guide">
+                    <figcaption>River Guide</figcaption>
+                </figure>
 
-                    <figure>
-                        <img src="images/prof_pic3.png" alt="Manager">
-                        <figcaption>Sarah Lee - Operations Manager</figcaption>
-                    </figure>
+                <figure>
+                    <img src="images/profpic_3.jpg" alt="Manager">
+                    <figcaption>Operations Manager</figcaption>
+                </figure>
 
-                    <figure>
-                        <img src="images/prof_pic2.png" alt="Support">
-                        <figcaption>Mike Santos - Customer Support</figcaption>
-                    </figure>
-                </div>
-            </section>
+                <figure>
+                    <img src="images/profpic_2.jpg" alt="Support">
+                    <figcaption>Customer Support</figcaption>
+                </figure>
+            </div>
+        </section>
 
     </main>
 
+    <!-- SAME FOOTER -->
     <footer>
-        <p>©️2026 Exciting Expedition | Irene Costales</p>
+        <p>©️2026 🏄 Exciting Expeditions 🏄 | Irene Costales</p>
 
         <nav class="socialmedia">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-                <img src="images/linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="Instagram">
-            </a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/linkedIn.png" alt="LinkedIn"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
         </nav>
     </footer>
 
